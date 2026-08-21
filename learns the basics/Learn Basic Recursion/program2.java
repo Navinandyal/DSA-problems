@@ -1,14 +1,14 @@
 /*
-1 to n Without Loops
+Print n to 1 Without Loop
 
-https://www.geeksforgeeks.org/problems/print-1-to-n-without-using-loops3621/1
-https://takeuforward.org/plus/dsa/problems/print-1-to-n-using-recursion?source=strivers-a2z-dsa-track
+https://www.geeksforgeeks.org/problems/print-n-to-1-without-loop/1
+https://takeuforward.org/plus/dsa/problems/print-n-to-1-using-recursion?source=strivers-a2z-dsa-track
 
 
 */
 import java.util.Scanner;
 
-class program1{
+class program2{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in); 
         System.out.println("Enter a the number: ");
@@ -19,8 +19,8 @@ class program1{
     static void print(int n){
         if(n<1)return;
         else{
-            print(n-1);
             System.out.print(n+" ");
+            print(n-1);
         }
     }
 }
